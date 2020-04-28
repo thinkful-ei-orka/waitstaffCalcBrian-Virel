@@ -29,7 +29,7 @@ function customerCharges(){
     let total = earningsInfo.subtotal + earningsInfo.tip;
     render('.customerCharges', `<p class="js-subtotal">Subtotal: ${earningsInfo.subtotal} </p>
     <p class="js-tip">Tip: ${earningsInfo.tip} </p>
-    <hr>
+    <hr class="hr12">
     <p class="total">Total: ${total}</p>`);
 }
 
@@ -37,7 +37,7 @@ function myEarningsInfo(){
     let currentAvgTip = averageTip();
     render('.myEarnings',`<p class="js-tip-total">Tip Total: ${earningsInfo.tipTotal}</p>
         <p class="js-meal-count">Meal count: ${earningsInfo.mealCount}</p>
-        <hr>
+        <hr class="hr12">
         <p class="js-average-tip">Average Tip Per Meal: ${currentAvgTip}</p>`);
 }
 

@@ -23,15 +23,18 @@ form{
 }
 
 .mealBtns{
-    padding-left: 100px;
+    padding-left: 40px;
     margin-left: 100px;
     margin-right: 0;
     padding-right: 0;
+    margin-top: 150px;
 }
-.buttonMeal{
-    margin-top: 100px;
-    
-    
+
+button{
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    box-shadow: 2px 5px black;
 }
 
 .chargesContainer{
@@ -46,4 +49,12 @@ form{
     width: 500px;
     border: 2px solid black;
     
+}
+
+.js-subtotal, .js-tip, .total, .js-tip-total, .js-meal-count, .js-average-tip{
+    padding-left: 20px;
+}
+.hr12{
+    width: 35%;
+    margin-left: 10px;
 }
