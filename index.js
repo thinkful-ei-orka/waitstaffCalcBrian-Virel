@@ -1,36 +1,44 @@
 const earningsInfo = {
     tipTotal: 0.00,
     mealCount: 0,
-    subtotal: 0,
-    tip: 0,
+    subtotal: 0.00,
+    tip: 0.00,
 }
 
-function render (){
 
+
+function render (whereTo,str){
+ 
+    $(whereTo).html(str);
 }
 
 function averageTip (){
-
+    return earningsInfo.tipTotal / earningsInfo.mealCount;
 }
 
-function subtotal (mealPrice, taxRate){
-    earningsInfo.subtotal = mealPrice + taxRate;
+function fncSubtotal (mealPrice, taxRate){
+   earningsInfo.subtotal = mealPrice + taxRate;
 }
 
-function tip (mealPrice, tipPercent){
+function fncTip (mealPrice, tipPercent){
     earningsInfo.tip = mealPrice * (tipPercent/100);
 }
 
-function mealDetail(){
-
-}
 
 function customerCharges(){
-
+    let total = earningsInfo.subtotal + earningsInfo.tip;
+    render('.customerCharges', `<p class="js-subtotal">Subtotal: ${earningsInfo.subtotal} </p>
+    <p class="js-tip">Tip: ${earningsInfo.tip} </p>
+    <hr>
+    <p class="total">Total: ${total}</p>`);
 }
 
 function myEarningsInfo(){
-
+    let currentAvgTip = averageTip();
+    render('.myEarnings',`<p class="js-tip-total">Tip Total: ${earningsInfo.tipTotal}</p>
+        <p class="js-meal-count">Meal count: ${earningsInfo.mealCount}</p>
+        <hr>
+        <p class="js-average-tip">Average Tip Per Meal: ${currentAvgTip}</p>`);
 }
 
 function tipTotal(){
@@ -71,8 +79,10 @@ function main (){
     btnSubmitClick();
     btnCancelClick();
     btnResetClick();
+     customerCharges();
+     $(myEarningsInfo);
+    //$(render);
 }
 
 $(main);
 
-const newItemName = $('.js-shopping-list-entry').val();
