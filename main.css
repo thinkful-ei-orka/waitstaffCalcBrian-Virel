@@ -1,0 +1,49 @@
+.mealContainer{
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    
+}
+.mealDetails, .h2customerCharges, .h2myEarnings{
+    padding-left: 30px;
+}
+
+
+form{
+    text-align: left;
+}
+.input{
+    display: inline-block;
+    margin-bottom: 10px;
+    
+}
+.labeli{
+    width: 9em;
+    text-align: right;
+}
+
+.mealBtns{
+    padding-left: 100px;
+    margin-left: 100px;
+    margin-right: 0;
+    padding-right: 0;
+}
+.buttonMeal{
+    margin-top: 100px;
+    
+    
+}
+
+.chargesContainer{
+    height: 250px;
+    width: 500px;
+    border: 2px solid black;
+    
+}
+
+.earingsContainer{
+    height: 250px;
+    width: 500px;
+    border: 2px solid black;
+    
+}

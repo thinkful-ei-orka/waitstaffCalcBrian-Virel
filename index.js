@@ -41,24 +41,22 @@ function myEarningsInfo(){
         <p class="js-average-tip">Average Tip Per Meal: ${currentAvgTip}</p>`);
 }
 
-function tipTotal(){
-
-}
-
 function handleSubmitClick(mealPrice, taxRate, tipPercent){
     //change tipTotal mealCount
-    subtotal(mealPrice, taxRate);
-    tip(mealPrice, tipPercent);
-    mealCount += 1;
-    
+    fncSubtotal(mealPrice, taxRate);
+    fncTip(mealPrice, tipPercent);
+    earningsInfo.mealCount += 1;
+    customerCharges();
+    myEarningsInfo(); 
 }
 
 function btnSubmitClick(){
     $('.meal-Details-Form').submit(function (event){
         event.preventDefault();
-        const mealPrice = $('.mealPriceInput').val();
-        const taxRate = $('.taxRateInput').val();
-        const tipPercent = $('.tipPercentInput').val();
+        const mealPrice = $('#mealPriceInput').val();
+        const taxRate = $('#taxRateInput').val();
+        const tipPercent = $('#tipPercentInput').val();
+        handleSubmitClick(mealPrice, taxRate, tipPercent);
     })
 }
 
@@ -79,7 +77,7 @@ function main (){
     btnSubmitClick();
     btnCancelClick();
     btnResetClick();
-     customerCharges();
+    customerCharges();
      $(myEarningsInfo);
     //$(render);
 }

@@ -3,31 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <title>Waiter Earnings Calculator</title>
 </head>
 <body>
     <h1 class='topHeader'>Waitstaff Calculator</h1>
-    <h2 class='mealDetails'>Enter the Meal Details</h2>
-    <section class='mealDetails'>
+    
+    
+    <section class='mealContainer'>
+        <h2 class='mealDetails'>Enter the Meal Details</h2><hr>
         <form class="meal-Details-Form">
-            <label for="mealPriceInput">Base Meal Price: $</label>
-            <input id="mealPriceInput" type="text">
-            <label for="taxRateInput">Tax Rate: %</label>
-            <input id="taxRateInput" type="text">
-            <label for="tipPercentInput">Tip Percentage: %</label>
-            <input id="tipPercentInput" type ="text">
-            <button class="button" type="submit">submit</button>
-            <button class="button Cancel" type="reset">Cancel</button>
+            <label for="mealPriceInput" class="input labeli " >Base Meal Price: $</label>
+            <input id="mealPriceInput" class="input inputi" type="text"><br>
+            <label for="taxRateInput" class="input labeli">Tax Rate: %</label>
+            <input id="taxRateInput" class="input inputi" type="text"><br>
+            <label for="tipPercentInput" class="input labeli">Tip Percentage: %</label>
+            <input id="tipPercentInput" class="input inputi" type ="text"><br>
+            <div class="mealBtns">
+                <button class="button buttonMeal" type="submit">submit</button>
+                <button class="button Cancel buttonMeal" type="reset">Cancel</button>
+            </div>
         </form>
     </section>
-    <h2 class='h2customerCharges'>Customer Charges</h2>
-    
-    <section class='customerCharges'>
+    <section class="chargesContainer">
+        <h2 class='h2customerCharges'>Customer Charges</h2><hr>
         
+        <div class='customerCharges'></div>
     </section>
-    <h2 class='h2myEarnings'>My Earnings Info</h2>
-    <section class='myEarnings'>
-        
+
+    
+    <section class="earingsContainer">
+        <h2 class='h2myEarnings'>My Earnings Info</h2><hr>
+        <div class='myEarnings'></div>
     </section>
     <div class="reset-container">
         <button class='button resetButton' type='button'>Reset</button>
