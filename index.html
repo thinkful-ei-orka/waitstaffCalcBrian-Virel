@@ -10,36 +10,39 @@
     <h1 class='topHeader'>Waitstaff Calculator</h1>
     
     
-    <section class='mealContainer'>
-        <h2 class='mealDetails'>Enter the Meal Details</h2><hr>
-        <form class="meal-Details-Form">
-            <label for="mealPriceInput" class="input labeli " >Base Meal Price: $</label>
-            <input id="mealPriceInput" class="input inputi" type="text"><br>
-            <label for="taxRateInput" class="input labeli">Tax Rate: %</label>
-            <input id="taxRateInput" class="input inputi" type="text"><br>
-            <label for="tipPercentInput" class="input labeli">Tip Percentage: %</label>
-            <input id="tipPercentInput" class="input inputi" type ="text"><br>
-            <div class="mealBtns">
-                <button class="button buttonMeal" type="submit">submit</button>
-                <button class="button Cancel buttonMeal" type="reset">Cancel</button>
-            </div>
-        </form>
-    </section>
-    <section class="chargesContainer">
-        <h2 class='h2customerCharges'>Customer Charges</h2><hr>
-        
-        <div class='customerCharges'></div>
-    </section>
-
-    
-    <section class="earingsContainer">
-        <h2 class='h2myEarnings'>My Earnings Info</h2><hr>
-        <div class='myEarnings'></div>
-    </section>
+    <div class="MAIN">
+        <div class="a">
+            <section class='mealContainer'>
+                <h2 class='mealDetails'>Enter the Meal Details</h2><hr>
+                <form class="meal-Details-Form">
+                    <label for="mealPriceInput" class="input labeli " >Base Meal Price: $</label>
+                    <input id="mealPriceInput" class="input inputi" type="text"><br>
+                    <label for="taxRateInput" class="input labeli">Tax Rate: %</label>
+                    <input id="taxRateInput" class="input inputi" type="text"><br>
+                    <label for="tipPercentInput" class="input labeli">Tip Percentage: %</label>
+                    <input id="tipPercentInput" class="input inputi" type ="text"><br>
+                    <div class="mealBtns">
+                        <button class="button buttonMeal" type="submit">submit</button>
+                        <button class="button Cancel buttonMeal" type="reset">Cancel</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="b">
+            <section class="chargesContainer">
+                <h2 class='h2customerCharges'>Customer Charges</h2><hr>  
+                <div class='customerCharges'></div>
+            </section>
+            <section class="earingsContainer">
+                    <h2 class='h2myEarnings'>My Earnings Info</h2><hr>
+                    <div class='myEarnings'></div>
+            </section>
+        </div> 
+    </div>      
     <div class="reset-container">
         <button class='button resetButton' type='button'>Reset</button>
     </div>
-    
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- base module -->

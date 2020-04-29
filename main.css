@@ -1,17 +1,31 @@
+.MAIN{
+    height: 550px;
+}
+
+.a{
+    margin-left: 100px;
+    float: left;
+}
+.b{
+    margin-left: 50px;
+    height: 600px;
+    display: inline-block;
+}
+
 h1{
     text-align: center;
     font-size: 400%;
 }
 .mealContainer{
-    height: 500px;
+    height: 554px;
     width: 500px;
     border: 2px solid black;
     
 }
+
 .mealDetails, .h2customerCharges, .h2myEarnings{
     padding-left: 30px;
 }
-
 
 form{
     text-align: left;
@@ -45,6 +59,7 @@ button{
     height: 250px;
     width: 500px;
     border: 2px solid black;
+    margin-bottom: 50px;
     
 }
 
@@ -61,4 +76,8 @@ button{
 .hr12{
     width: 35%;
     margin-left: 10px;
+}
+
+.reset-container{
+    margin-left: 1200px;
 }
